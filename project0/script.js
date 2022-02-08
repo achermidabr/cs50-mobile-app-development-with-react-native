@@ -55,7 +55,7 @@ function createLiComponent(todoText){
 }
 
 function createCheckBox(){
-  let checkb = document.createElement('input')
+  const checkb = document.createElement('input')
   checkb.setAttribute('type','checkbox')
   checkb.setAttribute('class', classNames['TODO_CHECKBOX'])
 
@@ -71,7 +71,7 @@ function createCheckBox(){
 }
 
 function createText(todoText){
-  let span = document.createElement('span')
+  const span = document.createElement('span')
   span.setAttribute("class", classNames['TODO_TEXT'])
   span.innerText = todoText
   return span
